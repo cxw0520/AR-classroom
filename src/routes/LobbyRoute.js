@@ -8,6 +8,7 @@ import CenteredContainer from '../view_components/CenteredContainer';
 import styles from './HomeRoute/styles.module.css'
 import { Grid, Modal } from 'semantic-ui-react';
 
+
 const PlayerList = ({ players }) => {
   return (
     <ListGroup>
@@ -20,14 +21,16 @@ const PlayerList = ({ players }) => {
   );
 }
 
-const currentUrl = window.location.href;
-const QRUrl = currentUrl.replace("lobby", "join-s");
-//console.log(QRUrl);
 
 const QRCode = ({ imageSize }) => {
+  //let { gameId } = useParams();
   const [qrcodeData, setQRCodeData] = useState(null);
   const canvasRef = useRef(null);
   const imageRef = useRef(null);
+  const currentUrl = window.location.href;
+  const QRUrl = currentUrl.replace("lobby", "join");
+  //console.log("c",currentUrl);
+  //console.log("QR",QRUrl);
 
   useEffect(() => {
     const generateQRCode = async (url) => {
@@ -71,7 +74,7 @@ const LobbyRoute = props => {
   let { gameId } = useParams();
   const [players, setPlayers] = useState([]);
   const [game, setGame] = useState(null);
-  const joinUrl = `${window.location.origin}/join-s/`;
+  const joinUrl = `${window.location.origin}/AR-classroom/#/join-s/`;
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
@@ -91,8 +94,11 @@ const LobbyRoute = props => {
           <CenteredContainer verticalCentered={true} maxWidth={800}>
             
             <h2>
-              加入遊戲請前往<a href={joinUrl} rel="noopener noreferrer" target="_blank">{joinUrl}</a> 
-              <br/>輸入房間代碼: 
+              加入遊戲請前往
+              <br/>
+              <a href={joinUrl} rel="noopener noreferrer" target="_blank">{joinUrl}</a> 
+              <br/>
+              並輸入房間代碼: 
             </h2>
           </CenteredContainer>
           </Grid.Row>

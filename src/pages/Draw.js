@@ -1,4 +1,4 @@
-import React,{ useState } from "react";
+import React, { useState } from "react";
 import {
   //CanvasPath,
   //ExportImageType,
@@ -11,13 +11,17 @@ import { getStorage, ref, uploadBytes } from "firebase/storage";
 
 const storage = getStorage();
 
+const equalParam = window.location.href.lastIndexOf("=") + 1;
+const playUrl = window.location.href.substring(equalParam);
+//console.log("currentUrl: " , currentUrl);
+//console.log("equalParam: " , equalParam);
+//console.log("playUrl: " , playUrl);
 
-const playUrl = window.location.search.substring(1).split("=")[1];
 const lastParam = window.location.href.lastIndexOf("/") + 1;
 const SID = window.location.href.substring(lastParam);
-console.log("playUrl: " + playUrl)
-//console.log("SID: " + SID);
+//console.log("SID: " , SID);
 const svgRef = ref(storage, `svgs/${ SID + ".svg" } `);
+
 
 const Handlers = [
   ["string", () => {}, "string"],
@@ -92,7 +96,7 @@ function Draw() {
 
   const canvasRef = React.createRef();
 
-  const [penButtonColor, setPenButtonColor] = React.useState("info");
+  const [penButtonColor, setPenButtonColor] = React.useState("primary");
   const [eraserButtonColor, setEraserButtonColor] = React.useState("secondary");
   const [dataURI, setDataURI] = React.useState("");
   const [svg, setSVG] = React.useState("");
@@ -221,7 +225,7 @@ function Draw() {
 
   const goToNext = () =>{
       if(isDone) {
-        window.location.href = playUrl;
+        window.location.href = `/AR-classroom/#${playUrl}`;
       }
       else{
         alert("請先畫圖並按完成")

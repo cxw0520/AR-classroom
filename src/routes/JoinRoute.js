@@ -61,7 +61,7 @@ const JoinRoute = () => {
   playUrl =  "?playUrl=/play/" + gameId + "/as/" + playerId;
 
   const redirectToPlay = () => {
-    window.location.replace(`/draw${playUrl}`);
+    window.location.replace(`/AR-classroom/#/draw${playUrl}`);
   };
 
   return (

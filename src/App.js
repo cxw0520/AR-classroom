@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -45,7 +45,7 @@ function App() {
     })
   })
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header/>
         <div className="App">
           <Routes>
@@ -76,7 +76,7 @@ function App() {
                      
           </Routes>
         </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

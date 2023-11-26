@@ -1,17 +1,15 @@
 import { doc, deleteDoc } from "firebase/firestore";
 import firebase from "../utils/firebase";
+import { useParams } from "react-router-dom"
 
-const currentUrl = window.location.href;
-//console.log("u:", currentUrl);
-const parsedURL = new URL(currentUrl);
-const path = parsedURL.pathname;
-const segments = path.split('/');
-const gameId = segments[segments.length - 1];
-console.log("gameId:", gameId);
 
+const lastParam = window.location.href.lastIndexOf("/") + 1;
+const gameId =  window.location.href.substring(lastParam);
+//console.log("gameId:", gameId);
 const deleteQuestion = async (questionId) => {
-    const db = firebase.firestore();
 
+    const db = firebase.firestore();
+    
     try {
         await deleteDoc(doc(db, 'games', gameId, 'questions', questionId))
         window.location.reload();
