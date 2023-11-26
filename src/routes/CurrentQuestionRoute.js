@@ -39,11 +39,14 @@ const CurrentQuestionRoute = ({ parentUrl }) => {
             <div className="display-1">
               {Math.ceil(timeLeft)}
             </div>
-            <ShowResultsBtn
-              isVisible={timeLeft <= 0}
-              //linkTo={`${url}/results/${question.id}`}
-              linkTo={`http://localhost:5173/index.html?GID=${gameId}&QID=${question.id}`}
-            />
+            {timeLeft <= 0 ? (
+              <meta httpEquiv="refresh" content={`0;url=https://cxw0520.github.io/ARC-Three/?GID=${gameId}&QID=${question.id}`} />
+            ) : (
+              <ShowResultsBtn
+                isVisible={timeLeft <= 0}
+                linkTo={`https://cxw0520.github.io/ARC-Three/?GID=${gameId}&QID=${question.id}`}
+              />
+            )}
           </div>
         : <div>請稍等...</div>
       }
