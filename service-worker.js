@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/AR-classroom/precache-manifest.c37f4ac635a59d6432d61f52513041d9.js"
+  "/AR-classroom/precache-manifest.9cc509d2f9b69dbb1419b2c571d90e45.js"
 );
 
 self.addEventListener('message', (event) => {
