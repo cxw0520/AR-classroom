@@ -2,7 +2,6 @@ import React from 'react';
 import {Menu, Form, Container, Message} from 'semantic-ui-react'
 import firebase from '../utils/firebase';
 import "firebase/auth";
-//import { useNavigate } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 
 function Signin(){

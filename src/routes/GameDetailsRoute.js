@@ -24,7 +24,6 @@ const GameDetailsRoute = props => {
         navigate('/games');
       } catch (error) {
         console.error('刪除遊戲時發生錯誤', error);
-        // 在錯誤處理方面，你可以根據需要採取進一步的措施
       }
     }
   };

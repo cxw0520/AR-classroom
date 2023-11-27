@@ -12,10 +12,9 @@ function Header(){
         });
     }, []);
     return (
-        
         <Menu size="large">
             <Menu.Item as={Link} to="/">
-                AR Classroom
+                Avatar Classroom
             </Menu.Item>
             
             <Menu.Menu position="right">
@@ -23,18 +22,23 @@ function Header(){
                 <>  
                     <Menu.Item as={Link} to ="/games">我的課程</Menu.Item>
                     <Menu.Item as={Link} to ="/join-s">學生連結</Menu.Item>
-                    <Menu.Item as={Link} to ="/results">結果報表</Menu.Item>
                     <Menu.Item as={Link} to ="/settings">設定</Menu.Item>
-                    <Menu.Item onClick={() => firebase.auth().signOut()}>登出</Menu.Item>
+                    <Menu.Item 
+                    onClick={() => firebase.auth().signOut()} 
+                    as={Link} to ="/">
+                        登出
+                    </Menu.Item>
                 </> 
                 ) : (
+                <>
+                    <Menu.Item as={Link} to ="/join-s">學生連結</Menu.Item>
                     <Menu.Item as={Link} to ="/signin">註冊/登入</Menu.Item>
+                </>
                 )}
             </Menu.Menu>
             
         </Menu>
     );
-    
 }
 
 export default Header;

@@ -1,3 +1,7 @@
 .hero_heading {
   font-size: 3rem;
 }
+.small_note {
+  font-size: 15px;
+  color:rgb(135, 135, 135);
+}

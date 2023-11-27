@@ -53,7 +53,7 @@ function MySettings( { user } ){
                 </Button>
             </Header>
             <Segment vertical>{user.displayName}</Segment>
-            <Modal open={isNameModalOpen} size='mini'>
+            <Modal basic open={isNameModalOpen} size='mini'>
                 <Modal.Header>修改使用者名稱</Modal.Header>
                 <Modal.Content>
                     <Input 
@@ -78,17 +78,18 @@ function MySettings( { user } ){
                     </Button>
                 </Header>
                 <Segment vertical>********</Segment>
-                <Modal size='mini' open={isPasswordModalOpen}>
+                <Modal basic size='mini' open={isPasswordModalOpen}>
                     <Modal.Header>修改使用者密碼</Modal.Header>
                     <Modal.Content>
-                        <Header size="small">目前密碼</Header>
+                        <Modal.Header size="small">目前密碼</Modal.Header>
                         <Input 
                             placeholder="輸入舊密碼" 
                             value={oldPassword} 
                             onChange={(e) => setOldPassword(e.target.value)}
                             fluid 
                         />
-                        <Header size="small">新密碼</Header>
+                        <Header></Header>
+                        <Modal.Header size="small">新密碼</Modal.Header>
                         <Input 
                             placeholder="輸入新密碼" 
                             value={newPassword} 

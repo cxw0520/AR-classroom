@@ -1,6 +1,5 @@
 import React from 'react'
 import { useLocation } from "react-router-dom"
-//import { Button, FormGroup, Label, Input } from 'reactstrap';
 
 import CenteredContainer from '../view_components/CenteredContainer';
 

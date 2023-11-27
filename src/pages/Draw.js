@@ -11,18 +11,6 @@ import { getStorage, ref, uploadBytes } from "firebase/storage";
 
 const storage = getStorage();
 
-const equalParam = window.location.href.lastIndexOf("=") + 1;
-const playUrl = window.location.href.substring(equalParam);
-console.log("currentUrl: " , currentUrl);
-console.log("equalParam: " , equalParam);
-console.log("playUrl: " , playUrl);
-
-const lastParam = window.location.href.lastIndexOf("/") + 1;
-const SID = window.location.href.substring(lastParam);
-//console.log("SID: " , SID);
-const svgRef = ref(storage, `svgs/${ SID + ".svg" } `);
-
-
 const Handlers = [
   ["string", () => {}, "string"],
 ];
@@ -65,6 +53,20 @@ function InputField({
 }
 
 function Draw() {
+  const [playUrl, setPlayUrl] = React.useState("");
+  const [svgRef, setSvgRef] = React.useState(null);
+  React.useEffect(() => {
+    const equalParam = window.location.href.lastIndexOf("=") + 1;
+    const playUrl = window.location.href.substring(equalParam);
+    setPlayUrl(playUrl);
+    
+    const lastParam = window.location.href.lastIndexOf("/") + 1;
+    const SID = window.location.href.substring(lastParam);
+    const computedSvgRef = ref(storage, `svgs/${SID + ".svg"}`);
+    setSvgRef(computedSvgRef);
+  }, []);
+  //console.log("playUrl:", playUrl);
+  
   const [canvasProps, setCanvasProps] = React.useState({
     className: "react-sketch-canvas",
     width: "100%",
@@ -132,6 +134,7 @@ function Draw() {
       exportedDataURI = exportedDataURI
         .replace('<rect id="react-sketch-canvas__mask-background" x="0" y="0" width="100%" height="100%" fill="white"></rect></g><defs></defs><g id="react-sketch-canvas__canvas-background-group"><rect id="react-sketch-canvas__canvas-background" x="0" y="0" width="100%" height="100%" fill="#FFFFFF"></rect>', '');
       const blob = new Blob([exportedDataURI], { type: 'image/svg+xml' });
+      console.log(blob);
       uploadBytes(svgRef, blob).then((snapshot) => {
           console.log('SVG upload to Firebase succeed');
       }).catch((error) => {
@@ -140,21 +143,6 @@ function Draw() {
     }
     
   };
-
-  /*const getSketchingTimeHandler = async () => {
-    const getSketchingTime = canvasRef.current?.getSketchingTime;
-
-    try {
-      if (getSketchingTime) {
-        const currentSketchingTime = await getSketchingTime();
-        setSketchingTime(currentSketchingTime);
-      }
-    } catch {
-      setSketchingTime(0);
-      console.error("With timestamp is disabled");
-    }
-  };*/
-
   
   const penHandler = () => {
     const eraseMode = canvasRef.current?.eraseMode;
@@ -245,10 +233,6 @@ function Draw() {
     
     //["Get Sketching time", getSketchingTimeHandler, "success"],
   ];
-
-  //const buttonNext = [
-    
-  //];
 
   const onChange = (updatedPaths) => {
     setPaths(updatedPaths);

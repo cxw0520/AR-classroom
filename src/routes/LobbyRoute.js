@@ -23,14 +23,11 @@ const PlayerList = ({ players }) => {
 
 
 const QRCode = ({ imageSize }) => {
-  //let { gameId } = useParams();
   const [qrcodeData, setQRCodeData] = useState(null);
   const canvasRef = useRef(null);
   const imageRef = useRef(null);
   const currentUrl = window.location.href;
   const QRUrl = currentUrl.replace("lobby", "join");
-  //console.log("c",currentUrl);
-  //console.log("QR",QRUrl);
 
   useEffect(() => {
     const generateQRCode = async (url) => {
@@ -53,10 +50,7 @@ const QRCode = ({ imageSize }) => {
       img.src = qrcodeData;
 
       img.onload = () => {
-        // Clear the canvas before drawing
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-        // Draw the QR code image
         ctx.drawImage(img, 0, 0);
       };
     }

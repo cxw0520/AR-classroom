@@ -6,10 +6,20 @@ const calculateQuestionResults = (gameId, questionId, gameStore = new GameStore(
   return answerStore
     .list({ gameId, questionId })
     .then(answers => {
+      
       let results = { 'A': [], 'B': [], 'C': [], 'D': []};
-      answers.forEach(answer => {
+
+      const latestAnswers = answers.reduce((acc, answer) => {
+        if (!acc[answer.playerName] || answer.timestamp > acc[answer.playerName].timestamp) {
+          acc[answer.playerName] = answer;
+        }
+        return acc;
+      }, {});
+
+      Object.values(latestAnswers).forEach(answer => {
         results[answer.choice] = results[answer.choice].concat(answer.playerName);
       });
+
       return results;
     });
 }

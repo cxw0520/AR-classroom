@@ -37,7 +37,7 @@ function JoinS(){
   else {
     return (
       <CenteredContainer maxWidth={500} verticalCentered={true}>
-        <h1 className={styles.hero_heading}>AR Classroom !</h1>
+        <h1 className={styles.hero_heading}>Avatar Classroom !</h1>
         <Form
           className="mb-5"
           onSubmit={(e) => {

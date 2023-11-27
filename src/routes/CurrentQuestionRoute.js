@@ -7,7 +7,7 @@ import Question from '../view_components/Question'
 import { startTimer } from '../utils/calculateTimeLeft';
 import CenteredContainer from '../view_components/CenteredContainer';
 
-const SECONDS_TO_QUESTION = 2;
+const SECONDS_TO_QUESTION = 10;
 
 const ShowResultsBtn = ({ isVisible, linkTo }) => {
   const handleBtnClick = () => {

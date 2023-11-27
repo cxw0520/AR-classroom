@@ -5,7 +5,6 @@ import { useParams } from "react-router-dom"
 
 const lastParam = window.location.href.lastIndexOf("/") + 1;
 const gameId =  window.location.href.substring(lastParam);
-//console.log("gameId:", gameId);
 const deleteQuestion = async (questionId) => {
 
     const db = firebase.firestore();
