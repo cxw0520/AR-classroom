@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/AR-classroom/static/css/main.b2c17acd.chunk.css",
-    "main.js": "/AR-classroom/static/js/main.43d263f2.chunk.js",
-    "main.js.map": "/AR-classroom/static/js/main.43d263f2.chunk.js.map",
+    "main.css": "/AR-classroom/static/css/main.b8ddb1fe.chunk.css",
+    "main.js": "/AR-classroom/static/js/main.eb207465.chunk.js",
+    "main.js.map": "/AR-classroom/static/js/main.eb207465.chunk.js.map",
     "runtime~main.js": "/AR-classroom/static/js/runtime~main.5c100787.js",
     "runtime~main.js.map": "/AR-classroom/static/js/runtime~main.5c100787.js.map",
     "static/css/2.c73450e6.chunk.css": "/AR-classroom/static/css/2.c73450e6.chunk.css",
-    "static/js/2.a9610f7f.chunk.js": "/AR-classroom/static/js/2.a9610f7f.chunk.js",
-    "static/js/2.a9610f7f.chunk.js.map": "/AR-classroom/static/js/2.a9610f7f.chunk.js.map",
+    "static/js/2.92b9e3e6.chunk.js": "/AR-classroom/static/js/2.92b9e3e6.chunk.js",
+    "static/js/2.92b9e3e6.chunk.js.map": "/AR-classroom/static/js/2.92b9e3e6.chunk.js.map",
     "index.html": "/AR-classroom/index.html",
-    "precache-manifest.451a9fb40cb94f5c18183eb4b6ff14c6.js": "/AR-classroom/precache-manifest.451a9fb40cb94f5c18183eb4b6ff14c6.js",
+    "precache-manifest.3260f993d546d5a29cf2785c6b0a9de8.js": "/AR-classroom/precache-manifest.3260f993d546d5a29cf2785c6b0a9de8.js",
     "service-worker.js": "/AR-classroom/service-worker.js",
     "static/css/2.c73450e6.chunk.css.map": "/AR-classroom/static/css/2.c73450e6.chunk.css.map",
-    "static/css/main.b2c17acd.chunk.css.map": "/AR-classroom/static/css/main.b2c17acd.chunk.css.map",
+    "static/css/main.b8ddb1fe.chunk.css.map": "/AR-classroom/static/css/main.b8ddb1fe.chunk.css.map",
     "static/media/semantic.min.css": "/AR-classroom/static/media/outline-icons.ef60a4f6.woff"
   }
 }
