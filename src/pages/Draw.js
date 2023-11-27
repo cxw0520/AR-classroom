@@ -13,9 +13,9 @@ const storage = getStorage();
 
 const equalParam = window.location.href.lastIndexOf("=") + 1;
 const playUrl = window.location.href.substring(equalParam);
-//console.log("currentUrl: " , currentUrl);
-//console.log("equalParam: " , equalParam);
-//console.log("playUrl: " , playUrl);
+console.log("currentUrl: " , currentUrl);
+console.log("equalParam: " , equalParam);
+console.log("playUrl: " , playUrl);
 
 const lastParam = window.location.href.lastIndexOf("/") + 1;
 const SID = window.location.href.substring(lastParam);
