@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/AR-classroom/static/css/main.b2c17acd.chunk.css",
-    "main.js": "/AR-classroom/static/js/main.ff34b9fd.chunk.js",
-    "main.js.map": "/AR-classroom/static/js/main.ff34b9fd.chunk.js.map",
+    "main.js": "/AR-classroom/static/js/main.bd1d6c19.chunk.js",
+    "main.js.map": "/AR-classroom/static/js/main.bd1d6c19.chunk.js.map",
     "runtime~main.js": "/AR-classroom/static/js/runtime~main.5c100787.js",
     "runtime~main.js.map": "/AR-classroom/static/js/runtime~main.5c100787.js.map",
     "static/css/2.c73450e6.chunk.css": "/AR-classroom/static/css/2.c73450e6.chunk.css",
     "static/js/2.b2e18d71.chunk.js": "/AR-classroom/static/js/2.b2e18d71.chunk.js",
     "static/js/2.b2e18d71.chunk.js.map": "/AR-classroom/static/js/2.b2e18d71.chunk.js.map",
     "index.html": "/AR-classroom/index.html",
-    "precache-manifest.adc356a5b8d37faba6b0effd514ecfb2.js": "/AR-classroom/precache-manifest.adc356a5b8d37faba6b0effd514ecfb2.js",
+    "precache-manifest.fce54d41cc40ea542664d0257c4e4002.js": "/AR-classroom/precache-manifest.fce54d41cc40ea542664d0257c4e4002.js",
     "service-worker.js": "/AR-classroom/service-worker.js",
     "static/css/2.c73450e6.chunk.css.map": "/AR-classroom/static/css/2.c73450e6.chunk.css.map",
     "static/css/main.b2c17acd.chunk.css.map": "/AR-classroom/static/css/main.b2c17acd.chunk.css.map",

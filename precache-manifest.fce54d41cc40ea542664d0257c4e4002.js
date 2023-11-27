@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7b7fc4e3af9788701afcf12d6c918142",
+    "revision": "ed95099e009b8f3c39606d292951a866",
     "url": "/AR-classroom/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AR-classroom/static/css/2.c73450e6.chunk.css"
   },
   {
-    "revision": "7ab2dcd9b6e78896eff8",
+    "revision": "a9da349a0f735a7abe7c",
     "url": "/AR-classroom/static/css/main.b2c17acd.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AR-classroom/static/js/2.b2e18d71.chunk.js"
   },
   {
-    "revision": "7ab2dcd9b6e78896eff8",
-    "url": "/AR-classroom/static/js/main.ff34b9fd.chunk.js"
+    "revision": "a9da349a0f735a7abe7c",
+    "url": "/AR-classroom/static/js/main.bd1d6c19.chunk.js"
   },
   {
     "revision": "fe081c0ea752b125b09e",
