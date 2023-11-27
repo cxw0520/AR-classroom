@@ -10,13 +10,18 @@ import CenteredContainer from '../view_components/CenteredContainer';
 const SECONDS_TO_QUESTION = 2;
 
 const ShowResultsBtn = ({ isVisible, linkTo }) => {
-  return isVisible ?
-    (
-      <Link to={linkTo}>
-        <Button color="primary">顯示回答結果</Button>
-      </Link>
-    ) : null
-}
+  const handleBtnClick = () => {
+    if (isVisible) {
+      window.location.href = linkTo;
+    }
+  };
+
+  return isVisible ? (
+    <Button color="primary" onClick={handleBtnClick}>
+      顯示回答結果
+    </Button>
+  ) : null;
+};
 
 const CurrentQuestionRoute = ({ parentUrl }) => {
   let { gameId } = useParams();
@@ -39,14 +44,10 @@ const CurrentQuestionRoute = ({ parentUrl }) => {
             <div className="display-1">
               {Math.ceil(timeLeft)}
             </div>
-            {timeLeft <= 0 ? (
-              <meta httpEquiv="refresh" content={`0;url=https://cxw0520.github.io/ARC-Three/?GID=${gameId}&QID=${question.id}`} />
-            ) : (
-              <ShowResultsBtn
-                isVisible={timeLeft <= 0}
-                linkTo={`https://cxw0520.github.io/ARC-Three/?GID=${gameId}&QID=${question.id}`}
-              />
-            )}
+            <ShowResultsBtn
+              isVisible={timeLeft <= 0}
+              linkTo={`https://cxw0520.github.io/ARC-Three/?GID=${gameId}&QID=${question.id}`}
+            />
           </div>
         : <div>請稍等...</div>
       }
