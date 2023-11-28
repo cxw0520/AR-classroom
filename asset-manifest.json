@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/AR-classroom/static/css/main.27ecb2fc.chunk.css",
+    "main.css": "/AR-classroom/static/css/main.c8bcd1db.chunk.css",
     "main.js": "/AR-classroom/static/js/main.dcaf9736.chunk.js",
     "main.js.map": "/AR-classroom/static/js/main.dcaf9736.chunk.js.map",
     "runtime~main.js": "/AR-classroom/static/js/runtime~main.5c100787.js",
@@ -9,10 +9,10 @@
     "static/js/2.92b9e3e6.chunk.js": "/AR-classroom/static/js/2.92b9e3e6.chunk.js",
     "static/js/2.92b9e3e6.chunk.js.map": "/AR-classroom/static/js/2.92b9e3e6.chunk.js.map",
     "index.html": "/AR-classroom/index.html",
-    "precache-manifest.1573545cff8a0d11b61ef9595eea97ec.js": "/AR-classroom/precache-manifest.1573545cff8a0d11b61ef9595eea97ec.js",
+    "precache-manifest.090a7b9b3aca6db6841eaf54fcb11772.js": "/AR-classroom/precache-manifest.090a7b9b3aca6db6841eaf54fcb11772.js",
     "service-worker.js": "/AR-classroom/service-worker.js",
     "static/css/2.c73450e6.chunk.css.map": "/AR-classroom/static/css/2.c73450e6.chunk.css.map",
-    "static/css/main.27ecb2fc.chunk.css.map": "/AR-classroom/static/css/main.27ecb2fc.chunk.css.map",
+    "static/css/main.c8bcd1db.chunk.css.map": "/AR-classroom/static/css/main.c8bcd1db.chunk.css.map",
     "static/media/semantic.min.css": "/AR-classroom/static/media/outline-icons.ef60a4f6.woff"
   }
 }
