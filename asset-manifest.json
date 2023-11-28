@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/AR-classroom/static/css/main.c8bcd1db.chunk.css",
-    "main.js": "/AR-classroom/static/js/main.dcaf9736.chunk.js",
-    "main.js.map": "/AR-classroom/static/js/main.dcaf9736.chunk.js.map",
-    "runtime~main.js": "/AR-classroom/static/js/runtime~main.5c100787.js",
-    "runtime~main.js.map": "/AR-classroom/static/js/runtime~main.5c100787.js.map",
-    "static/css/2.c73450e6.chunk.css": "/AR-classroom/static/css/2.c73450e6.chunk.css",
-    "static/js/2.92b9e3e6.chunk.js": "/AR-classroom/static/js/2.92b9e3e6.chunk.js",
-    "static/js/2.92b9e3e6.chunk.js.map": "/AR-classroom/static/js/2.92b9e3e6.chunk.js.map",
-    "index.html": "/AR-classroom/index.html",
-    "precache-manifest.090a7b9b3aca6db6841eaf54fcb11772.js": "/AR-classroom/precache-manifest.090a7b9b3aca6db6841eaf54fcb11772.js",
-    "service-worker.js": "/AR-classroom/service-worker.js",
-    "static/css/2.c73450e6.chunk.css.map": "/AR-classroom/static/css/2.c73450e6.chunk.css.map",
-    "static/css/main.c8bcd1db.chunk.css.map": "/AR-classroom/static/css/main.c8bcd1db.chunk.css.map",
-    "static/media/semantic.min.css": "/AR-classroom/static/media/outline-icons.ef60a4f6.woff"
+    "main.css": "/Avatar-classroom/static/css/main.453f21f9.chunk.css",
+    "main.js": "/Avatar-classroom/static/js/main.0cbfce0b.chunk.js",
+    "main.js.map": "/Avatar-classroom/static/js/main.0cbfce0b.chunk.js.map",
+    "runtime~main.js": "/Avatar-classroom/static/js/runtime~main.3f5fd201.js",
+    "runtime~main.js.map": "/Avatar-classroom/static/js/runtime~main.3f5fd201.js.map",
+    "static/css/2.b602c17c.chunk.css": "/Avatar-classroom/static/css/2.b602c17c.chunk.css",
+    "static/js/2.54b075dc.chunk.js": "/Avatar-classroom/static/js/2.54b075dc.chunk.js",
+    "static/js/2.54b075dc.chunk.js.map": "/Avatar-classroom/static/js/2.54b075dc.chunk.js.map",
+    "index.html": "/Avatar-classroom/index.html",
+    "precache-manifest.ece617df4142cd0bbb9d026748bce8ef.js": "/Avatar-classroom/precache-manifest.ece617df4142cd0bbb9d026748bce8ef.js",
+    "service-worker.js": "/Avatar-classroom/service-worker.js",
+    "static/css/2.b602c17c.chunk.css.map": "/Avatar-classroom/static/css/2.b602c17c.chunk.css.map",
+    "static/css/main.453f21f9.chunk.css.map": "/Avatar-classroom/static/css/main.453f21f9.chunk.css.map",
+    "static/media/semantic.min.css": "/Avatar-classroom/static/media/outline-icons.ef60a4f6.woff"
   }
 }
