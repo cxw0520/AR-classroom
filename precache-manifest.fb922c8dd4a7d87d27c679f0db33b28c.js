@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b9820fb207a4ed9e0e00467e41f6f573",
+    "revision": "d55a4288af0e84b8fc5039564515d23e",
     "url": "/AR-classroom/index.html"
   },
   {
