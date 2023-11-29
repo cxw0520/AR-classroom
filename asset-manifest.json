@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Avatar-classroom/static/css/main.11c8fa20.chunk.css",
-    "main.js": "/Avatar-classroom/static/js/main.1d6fcafd.chunk.js",
-    "main.js.map": "/Avatar-classroom/static/js/main.1d6fcafd.chunk.js.map",
+    "main.css": "/Avatar-classroom/static/css/main.dcb81917.chunk.css",
+    "main.js": "/Avatar-classroom/static/js/main.2a8b4b3c.chunk.js",
+    "main.js.map": "/Avatar-classroom/static/js/main.2a8b4b3c.chunk.js.map",
     "runtime~main.js": "/Avatar-classroom/static/js/runtime~main.3f5fd201.js",
     "runtime~main.js.map": "/Avatar-classroom/static/js/runtime~main.3f5fd201.js.map",
     "static/css/2.b602c17c.chunk.css": "/Avatar-classroom/static/css/2.b602c17c.chunk.css",
-    "static/js/2.32c48676.chunk.js": "/Avatar-classroom/static/js/2.32c48676.chunk.js",
-    "static/js/2.32c48676.chunk.js.map": "/Avatar-classroom/static/js/2.32c48676.chunk.js.map",
+    "static/js/2.54b075dc.chunk.js": "/Avatar-classroom/static/js/2.54b075dc.chunk.js",
+    "static/js/2.54b075dc.chunk.js.map": "/Avatar-classroom/static/js/2.54b075dc.chunk.js.map",
     "index.html": "/Avatar-classroom/index.html",
-    "precache-manifest.f77663b753ed8556eb8168eda60afd54.js": "/Avatar-classroom/precache-manifest.f77663b753ed8556eb8168eda60afd54.js",
+    "precache-manifest.c53c711db3a6b5c005497fc5a69c385d.js": "/Avatar-classroom/precache-manifest.c53c711db3a6b5c005497fc5a69c385d.js",
     "service-worker.js": "/Avatar-classroom/service-worker.js",
     "static/css/2.b602c17c.chunk.css.map": "/Avatar-classroom/static/css/2.b602c17c.chunk.css.map",
-    "static/css/main.11c8fa20.chunk.css.map": "/Avatar-classroom/static/css/main.11c8fa20.chunk.css.map",
+    "static/css/main.dcb81917.chunk.css.map": "/Avatar-classroom/static/css/main.dcb81917.chunk.css.map",
     "static/media/semantic.min.css": "/Avatar-classroom/static/media/outline-icons.ef60a4f6.woff"
   }
 }
