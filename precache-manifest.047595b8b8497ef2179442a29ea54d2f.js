@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2c53183b2a32bb86dca29489938cfe9a",
+    "revision": "63102151cac7a563b1b46d500687b90d",
     "url": "/Avatar-classroom/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Avatar-classroom/static/css/2.b602c17c.chunk.css"
   },
   {
-    "revision": "a06de7183a71cf0c93fc",
+    "revision": "1decf6414b5d8f9c4f96",
     "url": "/Avatar-classroom/static/css/main.1453cced.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Avatar-classroom/static/js/2.75fae0a4.chunk.js"
   },
   {
-    "revision": "a06de7183a71cf0c93fc",
-    "url": "/Avatar-classroom/static/js/main.21c00d6e.chunk.js"
+    "revision": "1decf6414b5d8f9c4f96",
+    "url": "/Avatar-classroom/static/js/main.4eb69cd7.chunk.js"
   },
   {
     "revision": "50d60281ea0511fdc264",
