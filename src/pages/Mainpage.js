@@ -19,10 +19,10 @@ function Mainpage(){
         <Container style={{ width: "100%", height: "100vh" }}>
         
             <Grid centered style={{ marginTop: "40px" }}>
-                <div style={{ fontWeight:"bold", fontSize: 50, color: "#152544" }}>Avatar</div>
+                <div style={{ fontWeight: "bold", fontSize: 50, color: "#152544" }}>Avatar</div>
             </Grid>
             <Grid centered style={{ marginTop: "60px" }}>
-                <div style={{ fontWeight:"bold", fontSize: 50, color: "#152544" }}>Classroom</div>
+                <div style={{ fontWeight: "bold", fontSize: 50, color: "#152544" }}>Classroom</div>
             </Grid>
             <Grid centered style={{ marginTop: "60px" }}>
                 <div style={{fontSize: 30}}>為您提供一個全新</div>
