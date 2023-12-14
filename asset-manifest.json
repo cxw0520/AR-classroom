@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Avatar-classroom/static/css/main.7fbde80b.css",
-    "main.js": "/Avatar-classroom/static/js/main.61e958e1.js",
+    "main.js": "/Avatar-classroom/static/js/main.0042642c.js",
     "static/media/brand-icons.svg": "/Avatar-classroom/static/media/brand-icons.6729d29753e000c17489.svg",
     "static/media/icons.svg": "/Avatar-classroom/static/media/icons.62d9dae4e0040e81c980.svg",
     "static/media/outline-icons.svg": "/Avatar-classroom/static/media/outline-icons.9c4845b4b41ef40a22fa.svg",
@@ -20,10 +20,10 @@
     "static/media/outline-icons.woff2": "/Avatar-classroom/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "index.html": "/Avatar-classroom/index.html",
     "main.7fbde80b.css.map": "/Avatar-classroom/static/css/main.7fbde80b.css.map",
-    "main.61e958e1.js.map": "/Avatar-classroom/static/js/main.61e958e1.js.map"
+    "main.0042642c.js.map": "/Avatar-classroom/static/js/main.0042642c.js.map"
   },
   "entrypoints": [
     "static/css/main.7fbde80b.css",
-    "static/js/main.61e958e1.js"
+    "static/js/main.0042642c.js"
   ]
 }
