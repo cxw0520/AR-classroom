@@ -93,7 +93,7 @@ function Draw() {
     //["backgroundImage", "text"],
     //["preserveBackgroundImageAspectRatio", "text"],
     ["strokeWidth", "range", "畫筆粗細"],
-    ["eraserWidth", "range", "橡皮擦粗細"],
+    //["eraserWidth", "range", "橡皮擦粗細"],
   ];
 
   const canvasRef = React.createRef();
@@ -129,7 +129,7 @@ function Draw() {
       var exportedDataURI = await exportSvg();
       setSVG(exportedDataURI);
       setIsDone(true);
-      //console.log(exportedDataURI);
+      console.log(exportedDataURI);
       
       exportedDataURI = exportedDataURI
         .replace('<rect id="react-sketch-canvas__mask-background" x="0" y="0" width="100%" height="100%" fill="white"></rect></g><defs></defs><g id="react-sketch-canvas__canvas-background-group"><rect id="react-sketch-canvas__canvas-background" x="0" y="0" width="100%" height="100%" fill="#FFFFFF"></rect>', '');
@@ -201,13 +201,15 @@ function Draw() {
     handler,
     themeColor,
     outline,
-    spacingClass
+    spacingClass,
+    disabled = false
   ) => (
     <button
       key={label}
       className={`btn btn-${outline}${themeColor} ${spacingClass} mb-3 btn-lg`}
       type="button"
       onClick={handler}
+      disabled={disabled}
     >
       {label}
     </button>
@@ -228,10 +230,10 @@ function Draw() {
   ];
 
   const buttonsWithHandlers = [
-    ["復原", undoHandler, "secondary", "outline-", ""],
-    ["取消復原", redoHandler, "secondary", "outline-", ""],
-    ["清除全部", clearHandler, "secondary", "outline-", ""],
-    ["重置", resetCanvasHandler, "secondary", "outline-", "mr-3"],
+    ["復原", undoHandler, "primary", "outline-", ""],
+    ["取消復原", redoHandler, "primary", "outline-", ""],
+    ["清除畫板", clearHandler, "primary", "outline-", ""],
+    //["重置", resetCanvasHandler, "secondary", "outline-", "mr-3"],
     //["Export Image", imageExportHandler, "success"],
     //["Get Sketching time", getSketchingTimeHandler, "success"],
   ];
@@ -241,7 +243,7 @@ function Draw() {
   ];
 
   const buttonsNext = [
-    ["下一步", goToNext, "success", "", "mr-3"],
+    ["下一步", goToNext, "success", "", "mr-3", !isDone],
   ];
 
   const onChange = (updatedPaths) => {
@@ -278,19 +280,14 @@ function Draw() {
               </div>
               <div className="col-12 panel d-flex flex-column align-items-center">
                 <div>
-                  <div class="btn-group" role="group" aria-label="buttonsPenEraser">
-                    {buttonsPenEraser.map(([label, handler, themeColor, outline, spacingClass]) =>
-                      createButton(label, handler, themeColor, outline, spacingClass)
-                    )}
-                  </div>
                   <div class="btn-group" role="group" aria-label="buttonsDone">
                     {buttonsDone.map(([label, handler, themeColor, outline, spacingClass]) =>
                       createButton(label, handler, themeColor, outline, spacingClass)
                     )}
                   </div>
                   <div class="btn-group" role="group" aria-label="buttonsNext">
-                    {buttonsNext.map(([label, handler, themeColor, outline, spacingClass]) =>
-                      createButton(label, handler, themeColor, outline, spacingClass)
+                    {buttonsNext.map(([label, handler, themeColor, outline, spacingClass, disabled]) =>
+                      createButton(label, handler, themeColor, outline, spacingClass, disabled)
                     )}
                   </div>
                 </div>

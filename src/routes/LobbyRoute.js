@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useParams, Link } from "react-router-dom"
-import { Button, ListGroup, ListGroupItem, Spinner } from 'reactstrap';
+import { Button, Container, ListGroup, ListGroupItem, Spinner } from 'reactstrap';
 import qrcode from "qrcode";
 import getLobbyPlayers from '../use_cases/getLobbyPlayers';
 import getGame from '../use_cases/getGame';
@@ -19,7 +19,7 @@ const PlayerList = ({ players }) => {
       >
         Loading...
       </Spinner>
-      <h1>已有&nbsp;<a className="display-3">{players.length}</a>&nbsp;位學生加入</h1>
+      <a style={{fontSize: 28, fontWeight: "bold"}}>已有&nbsp;<a className="display-3">{players.length}</a>&nbsp;位學生加入</a>
       <ListGroup>
         {
           players.map(player => (
@@ -112,7 +112,16 @@ const LobbyRoute = props => {
             <CenteredContainer verticalCentered={true} maxWidth={800}>
               <br/>
             <h1 className={styles.hero_heading} style={{fontSize:60}}>
-              <strong>{game ? game.shortCode : "___"}</strong>
+              <strong>
+                {game ? game.shortCode : 
+                  <Spinner
+                  color="primary"
+                  type="grow"
+                  >
+                    Loading...
+                  </Spinner>
+                }
+              </strong>
             </h1>
             </CenteredContainer>
           </Grid.Row>
@@ -143,13 +152,25 @@ const LobbyRoute = props => {
       </Grid.Row>
       <Grid.Row>
         <CenteredContainer verticalCentered={true} maxWidth={800}>
+          <Container>
             <Link to={`/host/${gameId}/questions/pending`}>
               <Button size='lg' color="primary">開始</Button>
             </Link>
+          </Container>
         </CenteredContainer>
       </Grid.Row>
       <Grid.Row>
         <CenteredContainer verticalCentered={true} maxWidth={800}>
+          <h1 className={styles.hero_heading} style={{fontSize:60}}>
+            {game ? game.name : 
+              <Spinner
+                color="primary"
+                type="grow"
+              >
+                Loading...
+              </Spinner>
+            }
+          </h1>
           <PlayerList players={players} />
         </CenteredContainer>
       </Grid.Row>

@@ -1,6 +1,5 @@
 import { doc, deleteDoc } from "firebase/firestore";
 import firebase from "../utils/firebase";
-import { useParams } from "react-router-dom"
 
 
 const deleteQuestion = async (questionId, gameId) => {

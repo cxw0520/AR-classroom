@@ -90,4 +90,4 @@ const JoinRoute = () => {
   
 }
 
-export default JoinRoute
+export default JoinRoute;

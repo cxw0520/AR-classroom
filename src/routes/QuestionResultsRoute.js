@@ -15,7 +15,7 @@ const isCorrectChoice = (question, choice) => {
 const ResultBoard = ({ result, className, question }) => {
   return (
     <div className={className}>
-      <h2 className="mb-4">{question ? question.text : null}</h2>
+      <h2 className="mb-4" style={{fontSize: 29}}>{question ? question.text : null}</h2>
       <Row>
         {
           Object.entries(result).map(([answer, players]) => (
@@ -26,11 +26,11 @@ const ResultBoard = ({ result, className, question }) => {
               >
                 <CardBody>
                   <CardTitle >
-                    <strong className='mr-2' style={{fontSize: 20}}>{answer}</strong>
+                    <strong className='mr-2' style={{fontSize: 25}}>{answer}</strong>
                     {isCorrectChoice(question, answer) ? '✔️' : '❌'}
                   </CardTitle>
                   <CardTitle>
-                    <strong style={{fontSize: 17}}>
+                    <strong style={{fontSize: 25}}>
                       {question[`answer${answer}`]}
                     </strong>
                   </CardTitle>

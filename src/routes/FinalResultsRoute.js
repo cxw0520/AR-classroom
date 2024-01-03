@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom"
 import { ListGroup, ListGroupItem, Badge, Button, Container } from 'reactstrap';
 import calculateFinalResults from '../use_cases/calculateFinalResults';
 import CenteredContainer from '../view_components/CenteredContainer';
-
+import styles from './styles.module.css';
 
 // Compares two Arrays of playerName, score in terms of ascending score.
 const sortScores = (a, b) => {
@@ -52,15 +52,16 @@ const FinalResultsRoute = props => {
   
   return (
     <CenteredContainer verticalCentered={true} maxWidth={500}>
+      <h1 className={styles.hero_heading}>課程結束!</h1>
       <h1>
-        課程結果
+        最終結果
       </h1>
       <Leaderboard results={results} />
       <br/>
       <Container>
         <Link to={`/games`}>
           <Button color="primary"> 
-            回題目列表
+            回我的課程
           </Button>
         </Link>
         

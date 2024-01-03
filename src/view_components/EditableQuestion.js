@@ -1,4 +1,4 @@
-import React, { useState, useParams } from 'react';
+import React, { useState } from 'react';
 import { InputGroup, InputGroupAddon, InputGroupText, Input, Card, CardTitle, Button, Spinner, FormGroup, Label } from 'reactstrap';
 import saveQuestion from '../use_cases/saveQuestion';
 import deleteQuestion from '../use_cases/deleteQuestion';
@@ -40,13 +40,14 @@ export const EditableQuestion = ({ question, game }) => {
             />
           </InputGroup>
         </CardTitle>
-        {['answerA', 'answerB', 'answerC', 'answerD'].map((ansKey) => (
+        {['answerA', 'answerB', 'answerC', 'answerD'].map((ansKey, index) => (
           <InputGroup key={ansKey} className="mb-2">
             <InputGroupAddon addonType="prepend">
-              <InputGroupText>{ansKey}</InputGroupText>
+              <InputGroupText>選項{String.fromCharCode(65 + index)}</InputGroupText>
             </InputGroupAddon>
             <Input
-              placeholder="請輸入選項"
+              type="textarea"
+              placeholder={`請輸入選項${String.fromCharCode(65 + index)}`}
               value={ansKey in draftQuestion ? draftQuestion[ansKey] : ''}
               onChange={e => updateDraft({[ansKey]: e.target.value})}
             />

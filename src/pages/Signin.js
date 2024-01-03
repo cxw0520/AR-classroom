@@ -26,12 +26,15 @@ function Signin(){
                 switch(error.code){
                     case 'auth/email-already-in-use':
                         setErrorMessage('信箱已存在');
+                        setIsLoading(false);
                         break;
                     case 'auth/invalid-email':
                         setErrorMessage('信箱格式不正確');
+                        setIsLoading(false);
                         break;
                     case 'auth/weak-password':
                         setErrorMessage('密碼強度不足');
+                        setIsLoading(false);
                         break;
                     default:
                 }
@@ -51,11 +54,24 @@ function Signin(){
                 switch(errorCode){
                     case 'auth/invalid-email':
                         setErrorMessage('信箱格式不正確');
-                        break;
-                    case 'auth/internal-error':
-                        setErrorMessage('此信箱尚未註冊 或 密碼錯誤');
                         setIsLoading(false);
                         break;
+                    case 'auth/invalid-credential':
+                        setErrorMessage('此信箱尚未註冊/密碼錯誤');
+                        setIsLoading(false);
+                        break;
+                    case 'auth/too-many-requests':
+                        setErrorMessage('登入次數超過限制 請稍後再試');
+                        setIsLoading(false);
+                        break; 
+                    /*case 'auth/user-not-found':
+                        setErrorMessage('此信箱尚未註冊');
+                        setIsLoading(false);
+                        break;
+                    case 'auth/wrong-password':
+                        setErrorMessage('密碼錯誤');
+                        setIsLoading(false);
+                        break;*/
                     default:
                 }
             

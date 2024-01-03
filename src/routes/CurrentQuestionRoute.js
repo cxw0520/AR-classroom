@@ -18,7 +18,7 @@ const ShowResultsBtn = ({ isVisible, linkTo }) => {
 
   return isVisible ? (
     <Button color="primary" onClick={handleBtnClick}>
-      顯示回答結果
+      顯示作答結果
     </Button>
   ) : null;
 };
